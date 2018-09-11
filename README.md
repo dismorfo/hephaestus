@@ -1,3 +1,3 @@
 # Hephaestus
 
-## Someday you will find documentation in this file
+Someday you will find documentation in this file
