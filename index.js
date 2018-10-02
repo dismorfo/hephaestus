@@ -54,7 +54,6 @@ const agartha = () => {
       copy: copy,
       fs: fs,
       rimraf: rimraf,
-      notifier: notifier,
       _onInit: [],
       _onDone: [],
       _onForge: [],
