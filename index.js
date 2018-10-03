@@ -36,6 +36,10 @@ const agartha = () => {
     copy.limit = 16;
     // https://www.npmjs.com/package/node-cleanup
     const nodeCleanup = require('node-cleanup');
+    // https://www.npmjs.com/package/node-notifier
+    const notifier = require('node-notifier');
+    // https://www.npmjs.com/package/solr-client
+    const discovery = require('solr-client');
 
     let modules = {};
 
@@ -52,8 +56,10 @@ const agartha = () => {
       emit: eventEmitter.emit,
       dateformat: dateformat,
       copy: copy,
+      discovery: discovery,
       fs: fs,
       rimraf: rimraf,
+      notifier: notifier,
       _onInit: [],
       _onDone: [],
       _onForge: [],
