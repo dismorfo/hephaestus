@@ -57,6 +57,7 @@ const agartha = () => {
       dateformat: dateformat,
       copy: copy,
       discovery: discovery,
+      nodeCleanup : nodeCleanup,
       fs: fs,
       rimraf: rimraf,
       notifier: notifier,
