@@ -2,6 +2,7 @@
  * hephaestus.js
  */
 'use strict';
+
 const agartha = () => {
   // http://underscorejs.org
   const _ = require('underscore');
@@ -12,10 +13,6 @@ const agartha = () => {
     const rimraf = require('rimraf');
     // https://nodejs.org/api/path.html
     const path = require('path');
-    // https://nodejs.org/api/events.html
-    // const events = require('events');
-    // Create an eventEmitter object
-    // const eventEmitter = new events.EventEmitter();
     // https://github.com/request/request
     const request = require('request');
     // https://github.com/felixge/node-dateformat
@@ -33,10 +30,13 @@ const agartha = () => {
     const notifier = require('node-notifier');
     // https://www.npmjs.com/package/solr-client
     const discovery = require('solr-client');
+    
     let modules = {};
+    
     fs.readdirSync(path.join(__dirname, 'lib')).forEach((module) => {
       modules[module] = require(path.join(__dirname, 'lib', module));
     })
+
     process.agartha = {
       _: _,
       fs: fs,
