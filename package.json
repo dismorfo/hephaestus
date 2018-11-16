@@ -1,16 +1,40 @@
 {
-  "name": "hephaestus",
-  "description": "Hephaestus",
-  "version": "2.0.0",
-  "author": "Alberto Ortiz Flores <dismorfo@gmail.com>",
+  "_from": "https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz",
+  "_id": "hephaestus@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+Cs6Ywvi+EZ8pqxOh28mySYbjCEjOtqpJVfAsFz8BZRtNfM4Prmo2P5htgDusdjldSx813TttxmM2yWued9X0Q==",
+  "_location": "/hephaestus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "hephaestus@https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz",
+    "name": "hephaestus",
+    "escapedName": "hephaestus",
+    "rawSpec": "https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz",
+    "saveSpec": "https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz",
+    "fetchSpec": "https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz"
+  },
+  "_requiredBy": [
+    "/hephaestus-cli"
+  ],
+  "_resolved": "https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz",
+  "_shasum": "fdd85516c9370eebaf2c586cc4f2d65ba25b5561",
+  "_spec": "hephaestus@https://github.com/dismorfo/hephaestus/archive/1.0.5.tar.gz",
+  "_where": "/Users/albertoortiz/tools/rosie/node_modules/hephaestus-cli",
+  "author": {
+    "name": "Alberto Ortiz Flores",
+    "email": "dismorfo@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dismorfo/hephaestus/issues"
+  },
+  "bundleDependencies": false,
   "contributors": [
-    "Alberto Ortiz Flores <dismorfo@gmail.com>"
+    {
+      "name": "Alberto Ortiz Flores",
+      "email": "dismorfo@gmail.com"
+    }
   ],
-  "keywords": [
-    "hephaestus"
-  ],
-  "repository": "dismorfo/hephaestus",
-  "license": "MIT",
   "dependencies": {
     "ajv": "^6.0.0",
     "cpy": "^7.0.1",
@@ -23,6 +47,7 @@
     "lexxy": "^0.4.0",
     "mkdirp": "0.5.1",
     "ncp": "^2.0.0",
+    "node-cleanup": "^2.1.2",
     "node-notifier": "^5.2.1",
     "node-sass": "^4.9.3",
     "pdf2json": "^1.1.7",
@@ -33,10 +58,11 @@
     "sorted-object": "2.0.1",
     "speakingurl": "^14.0.1",
     "uglify-js": "^3.4.9",
-    "xml2js": "^0.4.19",
     "underscore": "^1.9.1",
-    "node-cleanup": "^2.1.2"
+    "xml2js": "^0.4.19"
   },
+  "deprecated": false,
+  "description": "Hephaestus",
   "devDependencies": {
     "eslint": "^5.6.1",
     "eslint-config-google": "^0.10.0"
@@ -45,7 +71,18 @@
     "node": ">= 8.0"
   },
   "files": [],
+  "homepage": "https://github.com/dismorfo/hephaestus#readme",
+  "keywords": [
+    "hephaestus"
+  ],
+  "license": "MIT",
+  "name": "hephaestus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dismorfo/hephaestus.git"
+  },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint *.js"
-  }
+    "lint": "eslint *.js"
+  },
+  "version": "2.0.0"
 }
