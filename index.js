@@ -30,7 +30,9 @@ const agartha = () => {
     const notifier = require('node-notifier');
     // https://www.npmjs.com/package/solr-client
     const discovery = require('solr-client');
-    
+    // https://www.nodegit.org/
+    const git = require('nodegit');
+
     let modules = {};
     
     fs.readdirSync(path.join(__dirname, 'lib')).forEach((module) => {
@@ -48,12 +50,15 @@ const agartha = () => {
       discovery: discovery,
       rimraf: rimraf,
       notifier: notifier,
+      git: git,
       _onInit: [], // will remove and find a better solution
       _onDone: [], // will remove and find a better solution
       _onForge: [], // will remove and find a better solution
       _filemap: {} // will remove and find a better solution. Am I using this?
     };
+
     _.extendOwn(process.agartha, modules);
+    
     // new module?
     nodeCleanup(() => {
       process.agartha._.forEach(process.agartha._onDone, (callback) => {
