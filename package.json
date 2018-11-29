@@ -26,7 +26,6 @@
     "node-cleanup": "^2.1.2",
     "node-notifier": "^5.2.1",
     "node-sass": "^4.9.3",
-    "nodegit": "^0.23.0",
     "pdf2json": "^1.1.7",
     "request": "^2.88.0",
     "rimraf": "^2.6.2",
