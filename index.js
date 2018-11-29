@@ -30,8 +30,6 @@ const agartha = () => {
     const notifier = require('node-notifier');
     // https://www.npmjs.com/package/solr-client
     const discovery = require('solr-client');
-    // https://www.nodegit.org/
-    const git = require('nodegit');
 
     let modules = {};
     
