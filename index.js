@@ -48,7 +48,6 @@ const agartha = () => {
       discovery: discovery,
       rimraf: rimraf,
       notifier: notifier,
-      git: git,
       _onInit: [], // will remove and find a better solution
       _onDone: [], // will remove and find a better solution
       _onForge: [], // will remove and find a better solution
