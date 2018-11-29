@@ -10,6 +10,10 @@
     "hephaestus"
   ],
   "repository": "dismorfo/hephaestus",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/dismorfo/hephaestus.git"
+  },   
   "license": "MIT",
   "dependencies": {
     "ajv": "^6.0.0",
@@ -44,6 +48,8 @@
   "engines": {
     "node": ">= 8.0"
   },
+  "main": "index.js",
+  "preferGlobal": false,
   "files": [],
   "scripts": {
     "lint": "./node_modules/.bin/eslint *.js"
