@@ -50,7 +50,6 @@
   },
   "main": "index.js",
   "preferGlobal": false,
-  "files": [],
   "scripts": {
     "lint": "./node_modules/.bin/eslint *.js"
   }
