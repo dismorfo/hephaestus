@@ -51,6 +51,8 @@
   },
   "main": "index.js",
   "preferGlobal": false,
+  "deprecated": false,
+  "description": "Hephaestus",
   "scripts": {
     "lint": "./node_modules/.bin/eslint *.js"
   }
