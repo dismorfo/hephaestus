@@ -44,8 +44,7 @@ let agartha = {
   discovery: discovery,
   rimraf: rimraf,
   notifier: notifier,
-  nodeCleanup: nodeCleanup,
-  _filemap: []
+  nodeCleanup: nodeCleanup
 };
 
 module.exports = _.extendOwn(agartha, modules);

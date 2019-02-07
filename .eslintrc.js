@@ -6,7 +6,10 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 6 
+        "ecmaVersion": 2018
+    },
+    "globals": {
+      "Promise": true
     },
     "rules": {
         "no-console": 0,
