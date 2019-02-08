@@ -39,7 +39,10 @@
     "uglify-js": "^3.4.9",
     "underscore": "^1.9.1",
     "marky-mark": "git+https://github.com/dismorfo/marky-mark.git",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "@babel/core": "^7.2.2",
+    "prettier": "1.16.4",
+    "prettierrc": "0.0.0-5"    
   },
   "devDependencies": {
     "eslint": "^5.6.1",
