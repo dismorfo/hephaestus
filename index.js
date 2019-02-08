@@ -24,8 +24,8 @@ copy.limit = 16;
 const nodeCleanup = require('node-cleanup');
 // https://www.npmjs.com/package/node-notifier
 const notifier = require('node-notifier');
-// https://www.npmjs.com/package/solr-client
-const discovery = require('solr-client');
+// https://www.npmjs.com/package/solr-node
+const discovery = require('solr-node');
 
 let modules = {};
     
