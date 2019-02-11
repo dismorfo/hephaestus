@@ -9,7 +9,8 @@ module.exports = {
         "ecmaVersion": 2018
     },
     "globals": {
-      "Promise": true
+      "Promise": true,
+      "Proxy": true
     },
     "rules": {
         "no-console": 0,
