@@ -10,9 +10,7 @@ const fs = require('fs');
 // https://npmjs.org/package/rimraf
 const rimraf = require('rimraf');
 // https://nodejs.org/api/path.html
-const path = require('path');
-// https://github.com/request/request
-const request = require('request');
+const { resolve } = require('path');
 // https://github.com/felixge/node-dateformat
 const dateformat = require('dateformat');
 // track start time
@@ -24,27 +22,21 @@ copy.limit = 16;
 const nodeCleanup = require('node-cleanup');
 // https://www.npmjs.com/package/node-notifier
 const notifier = require('node-notifier');
-// https://www.npmjs.com/package/solr-client
-const discovery = require('solr-client');
+// https://www.npmjs.com/package/solr-node
+const discovery = require('solr-node');
 
 let modules = {};
-    
-fs.readdirSync(path.join(__dirname, 'lib')).forEach((module) => {
-  modules[module] = require(path.join(__dirname, 'lib', module));
+
+fs.readdirSync(resolve(__dirname, 'lib')).forEach(library => {
+  modules[library] = require(resolve(__dirname, 'lib', library));
 });
 
-let agartha = {
-  _: _,
-  fs: fs,
-  path: path,
+module.exports = _.extendOwn({
   timespan: timespan,
-  request: request,
   dateformat: dateformat,
   copy: copy,
   discovery: discovery,
   rimraf: rimraf,
   notifier: notifier,
   nodeCleanup: nodeCleanup
-};
-
-module.exports = _.extendOwn(agartha, modules);
+}, modules);
