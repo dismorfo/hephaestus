@@ -2,7 +2,7 @@
  * hephaestus.js
  */
 
- // http://underscorejs.org
+// http://underscorejs.org
 const _ = require('underscore');
 
 // https://nodejs.org/api/fs.html
@@ -10,15 +10,16 @@ const {
   readdirSync
 } = require('fs');
 
-// https://nodejs.org/api/path.html
-const {
-  resolve 
-} = require('path');
+const appDir = require('./lib/appDir');
 
 let modules = {};
 
-readdirSync(resolve(__dirname, 'lib')).forEach(library => {
-  modules[library] = require(resolve(__dirname, 'lib', library));
+readdirSync(`${__dirname}/lib`).forEach(library => {
+  modules[library] = require(`${__dirname}/lib/${library}`);
+});
+
+require('dotenv').config({
+  path: `${appDir()}/.env`
 });
 
 module.exports = _.extendOwn({
