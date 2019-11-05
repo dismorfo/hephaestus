@@ -9,28 +9,35 @@
   "keywords": [
     "hephaestus"
   ],
-  "repository": "dismorfo/hephaestus",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/dismorfo/hephaestus.git"
-  },   
+    "type": "git",
+    "url": "https://github.com/dismorfo/hephaestus.git"
+  },
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "ajv": "^6.0.0",
+    "babel-preset-minify": "^0.5.0",
+    "chalk": "2.4.2",
     "cpy": "^7.0.1",
     "dateformat": "^3.0.3",
+    "dotenv": "^8.2.0",
     "graceful-ncp": "^3.0.0",
     "handlebars": "^4.0.12",
     "handlebars-helpers": "^0.10.0",
     "html-entities": "^1.2.0",
     "html-minifier": "^3.5.20",
     "lexxy": "^0.4.0",
+    "marky-mark": "git+https://github.com/dismorfo/marky-mark.git",
     "mkdirp": "0.5.1",
     "ncp": "^2.0.0",
     "node-cleanup": "^2.1.2",
     "node-notifier": "^5.2.1",
     "node-sass": "^4.9.3",
     "pdf2json": "git+https://github.com/dismorfo/pdf2json.git",
+    "prettier": "1.16.4",
+    "prettierrc": "0.0.0-5",
     "request": "^2.88.0",
     "rimraf": "^2.6.2",
     "solr-node": "^1.1.1",
@@ -38,14 +45,7 @@
     "speakingurl": "^14.0.1",
     "uglify-js": "^3.4.9",
     "underscore": "^1.9.1",
-    "marky-mark": "git+https://github.com/dismorfo/marky-mark.git",
-    "xml2js": "^0.4.19",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-preset-minify": "^0.5.0",
-    "prettier": "1.16.4",
-    "chalk": "2.4.2",
-    "prettierrc": "0.0.0-5"
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "eslint": "^5.6.1",
@@ -57,7 +57,6 @@
   "main": "index.js",
   "preferGlobal": false,
   "deprecated": false,
-  "description": "Hephaestus",
   "scripts": {
     "lint": "./node_modules/.bin/eslint *.js"
   }
